@@ -4,10 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- ═══ FILL BEFORE FINAL DEPLOY (domain tajioui.org already set) ═══
-     1. GITHUB: replace  https://github.com/YOUR_GITHUB  (2 places: sameAs + links row) — or delete both
-     2. PHOTO (optional): put a square photo at /anis.jpg — only used for link-preview + schema, not shown on the page
--->
+<!-- Optional: drop a square photo at /anis.jpg — only used for link-preview + schema, not shown on the page. -->
 
 <title>Anis Tajioui — Software Developer & Co-founder of InfraMS UG</title>
 <meta name="description" content="Anis Tajioui is a German software developer and entrepreneur, co-founder and managing director of InfraMS UG in Hanau, and a Data Science & AI dual student at DHBW Mannheim with Zurich Insurance.">
@@ -53,7 +50,7 @@
   "sameAs": [
     "https://www.wikidata.org/wiki/Q140638702",
     "https://www.linkedin.com/in/anistji/",
-    "https://github.com/YOUR_GITHUB",
+    "https://github.com/tajioui",
     "https://inframs.de"
   ]
 }
@@ -133,11 +130,8 @@
   .stack > *:nth-child(6){animation-delay:.51s}
   @keyframes rise{to{opacity:1; transform:none}}
 
-  .eyebrow{display:flex; align-items:center; gap:.6rem; font-size:.72rem;
-    letter-spacing:.26em; text-transform:uppercase; color:var(--muted); font-weight:500; margin-bottom:1.4rem}
-  .dot{width:7px; height:7px; border-radius:50%; background:var(--brass);
-    box-shadow:0 0 0 0 var(--glow1); animation:pulse 3.2s ease-out infinite}
-  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(198,152,47,.5)}70%{box-shadow:0 0 0 10px rgba(198,152,47,0)}100%{box-shadow:0 0 0 0 rgba(198,152,47,0)}}
+  .eyebrow{font-size:.72rem; letter-spacing:.26em; text-transform:uppercase;
+    color:var(--muted); font-weight:500; margin-bottom:1.4rem}
 
   h1{font-size:clamp(2.7rem,8vw,4.6rem); line-height:1; letter-spacing:-.035em;
     font-weight:680; margin-bottom:.9rem}
@@ -178,7 +172,7 @@
   <div class="grain" aria-hidden="true"></div>
 
   <main class="stack">
-    <div class="eyebrow"><span class="dot"></span> Hanau · Rhein-Main</div>
+    <div class="eyebrow">Hanau, Germany</div>
 
     <h1>Anis<br><span class="sur">Tajioui</span></h1>
 
@@ -204,11 +198,11 @@
     <div class="links">
       <a href="https://inframs.de">InfraMS</a>
       <a href="https://www.linkedin.com/in/anistji/">LinkedIn</a>
-      <a href="https://github.com/YOUR_GITHUB">GitHub</a>
+      <a href="https://github.com/tajioui">GitHub</a>
       <a href="https://www.wikidata.org/wiki/Q140638702">Wikidata</a>
     </div>
 
-    <footer>© <span id="y"></span> Anis Tajioui · anis@tajioui.org</footer>
+    <footer>© <span id="y"></span> Anis Tajioui</footer>
   </main>
 
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
