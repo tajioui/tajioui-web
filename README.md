@@ -73,8 +73,8 @@ publishes `build/` to GitHub Pages.
 DNS is managed at Cloudflare and points at GitHub Pages. `static/CNAME` holds the custom domain
 and is copied into every build, so the domain survives each deploy.
 
-### One-time setup
+### Pages configuration
 
-In the repository settings on GitHub, under Pages, set the source to **GitHub Actions**. Until
-that is done the workflow will run successfully but the live site will still be served from the
-previous branch-based deployment.
+The workflow sets `enablement: true` on `actions/configure-pages`, so it switches the Pages
+source to GitHub Actions on the first run. If that step is ever rejected by permissions, set the
+source manually in the repository settings under Pages, then re-run the workflow.
